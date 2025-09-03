@@ -26,5 +26,23 @@
     <developerConnection>https://github.com/umeng/MultiFunctionAndroidDemo.git</developerConnection>
     <url>https://github.com/umeng/MultiFunctionAndroidDemo</url>
   </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.simpligility.maven.plugins</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <version>4.1.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <encoding>utf8</encoding>
+          <source>1.8</source>
+          <target>1.8</target>
+          <sign>
+            <debug>false</debug>
+          </sign>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies/>
 </project>
